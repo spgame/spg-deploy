@@ -1,0 +1,16 @@
+{
+  "Hostname": "test",
+  "Env": [
+    "JAVA_OPTS=-Duser.timezone=GMT+8"
+  ],
+  "Image": "spgmaster.just4test.net/diablo_staging",
+  "HostConfig": {
+    "PortBindings": {
+      "8080/tcp": [
+        {
+          "HostPort": "8086"
+        }
+      ]
+    }
+  }
+}

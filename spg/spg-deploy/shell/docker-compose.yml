@@ -1,0 +1,32 @@
+test:
+    build: .
+    hostname: test
+    ports:
+        - 8085:8080
+#    log_driver: "none"
+    environment:
+        - JAVA_OPTS=-Duser.timezone=GMT+8 -Xms512m -Xmx512m
+nightly:
+    build: .
+    hostname: nightly
+    ports:
+        - 8088:8080
+#    log_driver: "none"
+    environment:
+        - JAVA_OPTS=-Duser.timezone=GMT+8 -Xms512m -Xmx512m
+staging:
+    build: .
+    hostname: staging
+    ports:
+        - 8086:8080
+#    log_driver: "none"
+    environment:
+        - JAVA_OPTS=-Duser.timezone=GMT+8 -Xms512m -Xmx512m
+release:
+    build: .
+    hostname: release
+    ports:
+        - 8086:8080
+#    log_driver: "none"
+    environment:
+        - JAVA_OPTS=-Duser.timezone=GMT+8 -Xms8192m -Xmx8192m
