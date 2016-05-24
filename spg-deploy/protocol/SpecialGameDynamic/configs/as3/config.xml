@@ -1,0 +1,21 @@
+<config>
+	<type-map>
+		<type from="byte" to="int" upper="int" parseHandler="MessageTranslator.parseByte" packHandler="MessageTranslator.packByte"/>
+		<type from="short" to="int" upper="int" parseHandler="MessageTranslator.parseShort" packHandler="MessageTranslator.packShort"/>
+		<type from="int" to="int" upper="int" parseHandler="MessageTranslator.parseInt" packHandler="MessageTranslator.packInt"/>
+		<type from="long" to="String" upper="String" parseHandler="MessageTranslator.parseLong" packHandler="MessageTranslator.packLong"/>
+		<type from="float" to="Number" upper="Number" parseHandler="MessageTranslator.parseFloat" packHandler="MessageTranslator.packFloat"/>
+		<type from="double" to="Number" upper="Number" parseHandler="MessageTranslator.parseDouble" packHandler="MessageTranslator.packDouble"/>
+		<type from="String" to="String" upper="String" parseHandler="MessageTranslator.parseString" packHandler="MessageTranslator.packString"/>
+		<type from="boolean" to="Boolean" upper="Boolean" parseHandler="MessageTranslator.parseBoolean" packHandler="MessageTranslator.packBoolean"/>
+		<type from="enum" to="String" upper="String" parseHandler="MessageTranslator.parseEnum" packHandler="MessageTranslator.packEnum"/>
+	</type-map>
+	
+	<templates defaultPKG="com.vox.games.specialGame.net">
+		<template field="message" file="message.tpl" saveName="${@name}Message.as"/>
+		<template field="message" file="command.tpl" saveName="${@name}Command.as"/>
+		<template field="type" file="type.tpl" saveName="${@name}.as"/>
+		<template field="global" file="MessageType.tpl" saveName="MessageType.as"/>
+		<template field="global" file="ProtocolHash.tpl" saveName="ProtocolHash.json"/>
+	</templates>
+</config>

@@ -1,0 +1,18 @@
+<config>
+	<type-map>
+		<type from="byte" to="byte" upper="Byte" parseHandler="" packHandler=""/>
+		<type from="short" to="short" upper="Short" parseHandler="" packHandler=""/>
+		<type from="int" to="int" upper="Integer" parseHandler="" packHandler=""/>
+		<type from="long" to="String" upper="String" parseHandler="" packHandler=""/>
+		<type from="float" to="float" upper="Float" parseHandler="" packHandler=""/>
+		<type from="double" to="double" upper="Double" parseHandler="" packHandler=""/>
+		<type from="String" to="String" upper="String" parseHandler="" packHandler=""/>
+		<type from="boolean" to="boolean" upper="Boolean" parseHandler="" packHandler=""/>
+		<type from="enum" to="enum" upper="enum" parseHandler="" packHandler=""/>
+	</type-map>
+	
+	<templates defaultPKG="com.voxlearning.utopia.service.spg.net">
+		<template field="message" file="message.tpl" saveName="${@name}Request.java"/>
+		<template field="type" file="type.tpl" saveName="${@name}.java"/>
+	</templates>
+</config>
