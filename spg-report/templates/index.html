@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=640px, user-scalable=no"/>
+<link rel="stylesheet" href="static/css/skin.css"/>
+<script type="text/javascript">
+
+    ajaxLoad(getUrl(true), ajaxOnResult);
+
+    function getUrl(limit) {
+    	// var protocol = window.location.protocol
+    	// var url = window.location.href;
+    	// var hostname = window.location.hostname;
+    	var search = window.location.search;
+		var arr = search.split('&');
+		var session_key = getSessionKey(arr);
+		
+		var url = "/qadetail?" + session_key;
+		if (limit)
+		{
+			url += '&limit=5';
+		}
+		return url;
+		
+		function getSessionKey(arr) {
+			if (arr != null) {
+				for (var i=0; i<arr.length; i++) {
+					var val = arr[i];
+					var index = val.indexOf("session_key=");
+					if (index != -1) {
+						return val.substring(index, val.length);
+					}
+				}
+			}
+			return "";
+		}
+    }
+    
+    function ajaxLoad(uri, callback) {
+        var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+        request.onreadystatechange = callback;
+        request.open("GET", uri);
+        request.send(null);
+    }
+    
+	function learn_eval(wcc){
+		var str = '', colorType = '';
+	    if (wcc >= 25)
+	    {
+	    	colorType = 'green2';
+	        str = '熟练掌握'; 
+	    }
+	    else if (wcc >= 5)
+	    {
+	    	colorType = 'orange';
+	    	str = '初步掌握';
+	    }
+	    else
+	    {
+	    	colorType = 'red';
+	    	str = '尚未掌握';
+	    }
+	    return '<td><em class="'+colorType+'">'+str+'</em></td>';
+	}
+	
+	function correct_rate(wac, wcc){
+    	return Math.floor(wcc / wac * 10000) / 100;
+	}
+    
+    function ajaxOnResult(evt) {
+        if ((evt.currentTarget.readyState == 4) && (evt.currentTarget.status == 200 || evt.currentTarget.status == 0)) {
+        	
+            var dom = document.getElementById("qa_detail");
+            var json_data = JSON.parse(evt.currentTarget.responseText);
+            
+            var dev = '<div class="projectParentReport-head"><div class="title">练习详细情况：</div></div>';
+			var title = '<label for="input1" class="projectParentReport-label" onclick="ajaxLoad(getUrl(false), ajaxOnResult);"><input type="checkbox" id="input1"><span>显示所有单词</span></label>';
+			var thead = '<table class="projectParentReport-reallyTable"><thead><tr><td>中文/英文</td><td>掌握情况</td><td>正确率</td></tr></thead>';
+			var tfoot = '<tfoot><tr><td colspan="3"><span class="orange">注</span>：单词作对<em class="purple">5次</em>位<em class="purple">初步掌握</em>，作对<em class="green">25次</em>以上为<em class="green">熟练掌握</em></td></tr></tfoot></table>';
+			
+			var info = "";
+			for (var i = 0; i < json_data.length; i++)
+			{
+				var detail = json_data[i];
+				info += (i % 2 == 0) ? '<tr class="bgColor">' : '<tr>';
+				info += '<td>';
+				info += '<span>' + detail['cn_text'] + '</span>';
+				info += '<span>' + detail['en_text'] + '</span>';
+				info += '</td>';
+				info += learn_eval(detail['wcc']);
+				info += '<td><em class="orange">'+correct_rate(detail['wac'], detail['wcc'])+'</em>%</td>'
+				info += '</tr>';
+			}
+			
+            dom.innerHTML = dev + title + thead + info + tfoot;
+        }
+    }
+</script>
+<title>家长报告</title>
+</head>
+
+<body>
+<div class="projectParentReport-focus"></div>
+{% if data['TQA'] > 500 %}
+<div class="projectParentReport-module-1">
+	<div class="projectParentReport-head">
+		<div class="title">{{name}}的 洛亚传说 学习报告：</div>
+		<a href="{{pay_link}}" class="btn">开通</a>
+	</div>
+	<div class="projectParentReport-text">开通《洛亚传说》<span class="orange">VIP尊享双倍学习机会</span>，学习更多英语单词。</div>
+	<div class="projectParentReport-main">
+		<div class="{{data['TQA'] | icon(data['CR'] , data['TPQ'])}}"></div>
+		<div class="title">{{from_day}}----{{to_day}} <span class="blue">学习报告：</span></div>
+		<div class="table">
+			<ul>
+				<li>答题数</li>
+				<li><span class="blue">{{data['TQA']}}</span>题</li>
+			</ul>
+			<ul>
+				<li>正确率</li>
+				<li><span class="orange">{{data['CR'] | percent}}</span>%</li>
+			</ul>
+			<ul>
+				<li>平均时长</li>
+				<li><span class="blue">{{data['TPQ'] | ms2s}}</span>秒</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% else %}
+<div class="projectParentReport-module-1">
+	<div class="projectParentReport-head">
+		<div class="title">{{name}}的 洛亚传说 学习报告：</div>
+		<a href="{{pay_link}}" class="btn active">开通</a>
+	</div>
+	<div class="projectParentReport-text">开通《洛亚传说》<span class="orange">VIP尊享双倍学习机会</span>，学习更多英语单词。</div>
+	<div class="projectParentReport-main">
+		<div class="icon-1"></div>
+		<div class="text">您的孩子未达到每周500题的答题量，无法产生综合评分和参与排行，请继续努力提高答题量。</div>
+	</div>
+</div>
+{% endif %}
+<div class="projectParentReport-module-2">
+	<div class="projectParentReport-head">
+		<div class="title">班级平均水平：</div>
+	</div>
+	<div class="projectParentReport-main">
+		<div class="{{data['TQA_AVG_CLASS'] | icon(data['CR_AVG_CLASS'] , data['TPQ_AVG_CLASS'])}}"></div>
+		<div class="title"><!--全班共XX位学生在洛亚大陆学习--></div>
+		<div class="table">
+			<ul>
+				<li>答题数</li>
+				<li><span class="blue">{{data['TQA_AVG_CLASS']}}</span>题</li>
+				<li>{{data['TQA_CLASS_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+			<ul>
+				<li>正确率</li>
+				<li><span class="orange">{{data['CR_AVG_CLASS'] | percent}}</span>%</li>
+				<li>{{data['CR_CLASS_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+			<ul>
+				<li>平均时长</li>
+				<li><span class="blue">{{data['TPQ_AVG_CLASS'] | ms2s}}</span>秒</li>
+				<li>{{data['TPQ_CLASS_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="projectParentReport-module-3">
+	<div class="projectParentReport-head">
+		<div class="title">全市4年级平均水平：</div>
+	</div>
+	<div class="projectParentReport-main">
+		<div class="{{data['TQA_AVG_CITY'] | icon(data['CR_AVG_CITY'] , data['TPQ_AVG_CITY'])}}"></div>
+		<div class="title"><!--全班共XX位学生在洛亚大陆学习--></div>
+		<div class="table">
+			<ul>
+				<li>答题数</li>
+				<li><span class="blue">{{data['TQA_AVG_CITY']}}</span>题</li>
+				<li>{{data['TQA_CITY_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+			<ul>
+				<li>正确率</li>
+				<li><span class="orange">{{data['CR_AVG_CITY'] | percent}}</span>%</li>
+				<li>{{data['CR_CITY_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+			<ul>
+				<li>平均时长</li>
+				<li><span class="blue">{{data['TPQ_AVG_CITY'] | ms2s}}</span>秒</li>
+				<li>{{data['TPQ_CITY_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="projectParentReport-module-4">
+	<div class="projectParentReport-head">
+		<div class="title">全国4年级平均水平：</div>
+	</div>
+	<div class="projectParentReport-main">
+		<div class="{{data['TQA_AVG_NATIONAL'] | icon(data['CR_AVG_NATIONAL'] , data['TPQ_AVG_NATIONAL'])}}"></div>
+		<div class="title"><!--全班共XX位学生在洛亚大陆学习--></div>
+		<div class="table">
+			<ul>
+				<li>答题数</li>
+				<li><span class="blue">{{data['TQA_AVG_NATIONAL']}}</span>题</li>
+				<li>{{data['TQA_NATIONAL_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+			<ul>
+				<li>正确率</li>
+				<li><span class="orange">{{data['CR_AVG_NATIONAL'] | percent}}</span>%</li>
+				<li>{{data['CR_NATIONAL_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+			<ul>
+				<li>平均时长</li>
+				<li><span class="blue">{{data['TPQ_AVG_NATIONAL'] | ms2s}}</span>秒</li>
+				<li>{{data['TPQ_NATIONAL_RANK'] | rank(data['TQA'])}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="projectParentReport-module-5" id="qa_detail">
+
+</div>
+
+<div class="projectParentReport-module-5">
+	<div class="projectParentReport-head">
+		<div class="title">洛亚传说学习产品介绍：</div>
+	</div>
+	<div class="projectParentReport-text">洛亚传说是一款寓教于乐的英语学习产品，涵盖小学阶段所有重点单词。让孩子作业练习相结合，有效提高作业完成率，真正做到作业单词同步练，让孩子在趣味学习的过程中不断加深记忆。</div>
+</div>
+<div class="projectParentReport-module-6">
+	<div class="module">
+		<div class="projectParentReport-head">
+			<div class="title">科学记忆快乐学：</div>
+		</div>
+	</div>
+</div>
+<div class="projectParentReport-module-7">
+	<div class="module">
+		<div class="projectParentReport-head">
+			<div class="title">最先进的学习模式：</div>
+		</div>
+		<div class="projectParentReport-btnFoot"><a href="{{pay_link}}" class="btn">立即开通</a></div>
+	</div>
+</div>
+</body>
+</html>
