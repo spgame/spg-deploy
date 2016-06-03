@@ -7,18 +7,21 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="viewport" content="target-densitydpi=device-dpi, width=640px, user-scalable=no"/>
 <link rel="stylesheet" href="static/css/skin.css"/>
+<script src="static/js/jquery.min.js" type="text/javascript"></script>  
 <script type="text/javascript">
 
     ajaxLoad(getUrl(true), ajaxOnResult);
     var orderReferer = '{{orderReferer}}';
     
-    //家长端打点 打开页面
-    if (orderReferer == "spgLearningReport") {
-		var msg = getPingbackMsg("LearningReport", "Click-luoya");
-		if (window.external && window.external.log_b) {
-			window.external.log_b("", msg);
-		}
-    }
+    $(document).ready(function() {
+    	//家长端打点 打开页面
+	    if (orderReferer == "spgLearningReport") {
+			var msg = getPingbackMsg("LearningReport", "Click-luoya");
+			if (window.external && window.external.log_b) {
+				window.external.log_b("", msg);
+			}
+	    }
+    });
 	
 	//家长端打点 点击开通
 	function clickPingback() {
