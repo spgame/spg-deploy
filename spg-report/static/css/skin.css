@@ -1,0 +1,109 @@
+/*
+* @Description: Your Project Name
+* @author: zhaoy
+* @date: 2015-12-03 11:44:04
+*/
+
+/* touch-reset */
+html,body { color: #000; font: 16px/1.3 Arial,"Microsoft YaHei"; }
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li { margin: 0; padding: 0; }
+body { overflow: auto; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; }
+ul,li { list-style: none; }
+* { -webkit-tap-highlight-color: transparent; background-clip: padding-box; }
+.clearfix:after,.clearfix:before { content: ""; display: block; height: 0; overflow: hidden; clear: both; visibility: hidden; }
+select,input[type=text],input[type=submit],input[type=password],input[type=date],input[type=tel],input[type=number] { -webkit-appearance: none; -moz-appearance: none; -webkit-border-image: none; border-image: none; -webkit-border-radius: 0; border-radius: 0; }
+a { text-decoration: none; }
+
+/* projectParentReport-focus */
+.projectParentReport-focus { height: 318px; background: url(../images/projectParentReport-focus.jpg) no-repeat; background-size: 100% 100%; }
+
+/* projectParentReport-head */
+.projectParentReport-head { padding: 0 12px 0 0; height: 46px; }
+.projectParentReport-head .title { position: relative; float: left; padding: 0 0 0 15px; width: 60%; color: #fff; font-size: 26px; line-height: 46px; font-weight: 700; background-color: #4d4471; }
+.projectParentReport-head .title:after { position: absolute; top: 0; right: -52px; content: url(../images/projectParentReport-ico-1.png); width: 54px; height: 46px; line-height: 46px; }
+.projectParentReport-head .btn { float: right; margin: -6px 0 -5px; padding: 1px 0 0; width: 154px; height: 56px; border-radius: 10px; box-shadow: 0 -5px 0 #cc5606 inset; background-color: #f86807; text-align: center; color: #fff; font-size: 28px; line-height: 56px; font-weight: 700; cursor: pointer; }
+.projectParentReport-head .btn.active { background-color: #f8c007; box-shadow: 0 -5px 0 #cc9e06 inset; }
+
+.projectParentReport-module-6 .projectParentReport-head .title { background: none; }
+.projectParentReport-module-6 .projectParentReport-head .title:after { display: none; }
+
+/* projectParentReport-main */
+.projectParentReport-main { position: relative; padding: 0 0 20px 180px; min-height: 200px; }
+.projectParentReport-main .icon-1,.projectParentReport-main .icon-2,.projectParentReport-main .icon-3,.projectParentReport-main .icon-4,.projectParentReport-main .icon-5,.projectParentReport-main .icon-6 { position: absolute; top: 26px; left: 20px; width: 156px; height: 178px; background-position: 0 0; background-repeat: no-repeat; background-size: 100% 100%; }
+.projectParentReport-main .icon-1 { background-image: url(../images/projectParentReport-ico-4.png); }
+.projectParentReport-main .icon-2 { background-image: url(../images/projectParentReport-ico-5.png); }
+.projectParentReport-main .icon-3 { background-image: url(../images/projectParentReport-ico-6.png); }
+.projectParentReport-main .icon-4 { background-image: url(../images/projectParentReport-ico-7.png); }
+.projectParentReport-main .icon-5 { background-image: url(../images/projectParentReport-ico-8.png); }
+.projectParentReport-main .icon-6 { background-image: url(../images/projectParentReport-ico-9.png); }
+.projectParentReport-main .title { height: 46px; overflow: hidden; text-align: center; color: #797979; font-size: 24px; line-height: 46px; font-weight: 700; }
+.projectParentReport-main .title .blue { color: #03b4ea; }
+.projectParentReport-main .white { color: #fff; }
+.projectParentReport-main .table { padding: 4px 24px; }
+.projectParentReport-main .table ul { display: box; display: -moz-box; display: -webkit-box; box-orient: horizontal; -moz-box-orient: horizontal; -webkit-box-orient: horizontal; }
+.projectParentReport-main .table li { margin: -2px 3px; border: 3px #13b5ef solid; box-flex: 1; -moz-box-flex: 1; -webkit-box-flex: 1; width: 33%; height: 44px; white-space: nowrap; text-overflow: ellipsis; text-align: center; color: #797979; font-size: 24px; line-height: 44px; font-weight: 700; }
+.projectParentReport-main .table li .blue { color: #03b4ea; }
+.projectParentReport-main .table li .orange { color: #f86807; }
+.projectParentReport-main .table li .purple { color: #4d4471; }
+.projectParentReport-main .table ul:first-child li:first-child { border-radius: 15px 0 0 0; }
+.projectParentReport-main .table ul:first-child li:last-child { border-radius: 0 15px 0 0; }
+.projectParentReport-main .table ul:last-child li:first-child { border-radius: 0 0 0 15px; }
+.projectParentReport-main .table ul:last-child li:last-child { border-radius: 0 0 15px 0; }
+.projectParentReport-main .text { padding: 28px 20px 0; color: #696969; font-size: 24px; line-height: 42px; font-weight: 700; }
+.projectParentReport-main .text .orange { color: #f86807; }
+
+.projectParentReport-module-1 .projectParentReport-main .title { margin: 0 0 0 -120px; }
+.projectParentReport-module-1 .projectParentReport-main .table { padding: 4px 40px; }
+
+/* projectParentReport-text */
+.projectParentReport-text { padding: 10px 10px 10px 18px; color: #797979; font-size: 24px; line-height: 42px; font-weight: 700; }
+.projectParentReport-text .orange { color: #f86807; }
+
+.projectParentReport-module-1 .projectParentReport-text { padding: 7px 10px 0; font-size: 20px; }
+
+/* projectParentReport-btnFoot */
+.projectParentReport-btnFoot { position: relative; height: 46px; text-align: center; }
+.projectParentReport-btnFoot:after,.projectParentReport-btnFoot:before { position: absolute; top: 0; content: ""; width: 200px; height: 46px; background-repeat: no-repeat; background-size: 100% 100%; }
+.projectParentReport-btnFoot:after { left: 0; background-image: url(../images/projectParentReport-ico-2.png); }
+.projectParentReport-btnFoot:before { right: 0; background-image: url(../images/projectParentReport-ico-3.png); }
+.projectParentReport-btnFoot .btn { display: inline-block; margin: -14px 0 0; width: 204px; height: 60px; border-radius: 10px; box-shadow: 0 -5px 0 #cc5606 inset; background-color: #f86807; text-align: center; color: #fff; font-size: 30px; line-height: 60px; font-weight: 700; cursor: pointer; }
+.projectParentReport-btnFoot .btn.active { background-color: #f8c007; box-shadow: 0 -5px 0 #cc9e06 inset; }
+
+.projectParentReport-module-7 .projectParentReport-btnFoot { position: fixed; bottom: 20px; left: 0; width: 100%; background-color: rgba(255,255,255,0.6); }
+
+/* projectParentReport-module */
+.projectParentReport-module-2,.projectParentReport-module-3,.projectParentReport-module-4,.projectParentReport-module-6 .module,.projectParentReport-module-7 .module { background-position: 0 0; background-repeat: no-repeat; background-size: 100% 100%; }
+.projectParentReport-module-2,.projectParentReport-module-3,.projectParentReport-module-4 { border-bottom: 6px #fff solid; }
+.projectParentReport-module-1 { border-bottom: 6px #dcd9d9 solid; padding: 6px 0 0; }
+.projectParentReport-module-2 { background-image: url(../images/projectParentReport-bg-1.png); margin: 6px 0 0; }
+.projectParentReport-module-3 { background-image: url(../images/projectParentReport-bg-2.png); }
+.projectParentReport-module-4 { background-image: url(../images/projectParentReport-bg-3.png); }
+.projectParentReport-module-5 { padding: 6px 0 0; border-top: 6px #dcd9d9 solid; }
+.projectParentReport-module-6 { padding: 6px 0; border-top: 6px #4d4471 solid; border-bottom: 6px #4d4471 solid; }
+.projectParentReport-module-6 .module { padding: 5px 0 0; background-image: url(../images/projectParentReport-bg-4.png); height: 267px; }
+.projectParentReport-module-7 { padding: 6px 0 20px; border-top: 6px #4d4471 solid; border-top: 6px #dddadb solid; }
+.projectParentReport-module-7 .module { background-image: url(../images/projectParentReport-bg-5.png); height: 314px; }
+
+/* projectParentReport-label */
+.projectParentReport-label { position: relative; display: block; padding: 5px 0 0 40px; color: #797979; font-size: 16px; line-height: 38px; cursor: pointer; }
+.projectParentReport-label input { position: absolute; top: 12px; left: 12px; margin: 0; width: 22px; height: 22px; border: 0 none; background: #f86807; }
+.projectParentReport-label span { display: inline-block; }
+
+/* projectParentReport-reallyTable */
+.projectParentReport-reallyTable { width: 100%; border-collapse: collapse; border-spacing: 0; }
+.projectParentReport-reallyTable td { padding: 0 10px; text-align: center; color: #797979; font-weight: 700; }
+.projectParentReport-reallyTable td:first-child { width: 40%; text-align: left; }
+.projectParentReport-reallyTable thead td { height: 32px; font-size: 22px; }
+.projectParentReport-reallyTable tbody td { height: 50px; font-size: 20px; line-height: 26px; }
+.projectParentReport-reallyTable tbody .bgColor td { background-color: #efefef; }
+.projectParentReport-reallyTable tbody span { display: block; font-size: 16px; line-height: 18px; }
+.projectParentReport-reallyTable .red { color: #cc3300; }
+.projectParentReport-reallyTable .purple { color: #4d4471; }
+.projectParentReport-reallyTable .orange { color: #f86807; }
+.projectParentReport-reallyTable .orange2 { color: #ffcc00; }
+.projectParentReport-reallyTable .green { color: #06d876; }
+.projectParentReport-reallyTable .green2 { color: #33cc33;  }
+.projectParentReport-reallyTable em { font-style: normal; }
+.projectParentReport-reallyTable tfoot td { padding: 4px 10px; height: 28px; font-size: 16px; }
+.projectParentReport-reallyTable tfoot span { font-size: 20px; }

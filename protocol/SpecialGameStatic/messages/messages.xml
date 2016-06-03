@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<types>
+		
+		<type name="SpgPetDefStaticResponse" pkg="types.response" comment="宠物定义响应" hash="1D3C26D42B6B841424C382804C018487">
+			<var name="list" type="SpgPetDefStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="SkillDefStaticResponse" pkg="types.response" comment="技能定义响应" hash="43081CFD57CCBE1FA8B8015D3A94D994">
+			<var name="list" type="SpgPetSkillStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="ItemStaticResponse" pkg="types.response" comment="道具信息" hash="E8B1D1090282819AF60DC535A3844839">
+			<var name="list" type="ItemStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="ChapterDefStaticResponse" pkg="types.response" comment="副本定义响应" hash="A37545729164F22C5C1FBD5E3DF6A2B0">
+			<var name="list" type="SpgPlayChapterStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="FightDefStaticResponse" pkg="types.response" comment="关卡定义响应" hash="A12177F4F63B4A772AD001CE66F1BC73">
+			<var name="list" type="SpgFightDefStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="EnemyDefStaticResponse" pkg="types.response" comment="敌人定义响应" hash="7E3A5BF5E0E6264829983763E9AEE728">
+			<var name="list" type="SpgEnemyDefStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="EggDefStaticResponse" pkg="types.response" comment="蛋定义响应" hash="8B6EAA1546AF51B9F79F1CAC43FDCC46">
+			<var name="list" type="SpgEggStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="EvolveFormulaStaticResponse" pkg="types.response" comment="进化路线" hash="A857B2E989AF6DF502D7F9390A4754CE">
+			<var name="list" type="SpgEvolveFormulaStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="LevelExpStaticResponse" pkg="types.response" comment="等级经验" hash="D44FEF856C4999E7E054F7190116A200">
+			<var name="list" type="LevelExpStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="RechargeProductStaticResponse" pkg="types.response" comment="充值商品" hash="89BCBAD8401F7B14E256F71B5A18DB53">
+			<var name="list" type="RechargeProductStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="SkillUpgradeCostStaticResponse" pkg="types.response" comment="升级消耗" hash="AB49BD84B1FFA608874E08698633D330">
+			<var name="list" type="SkillUpgradeCostStatic[]" comment="升级消耗"/>
+		</type>
+		
+		<type name="VipCardPrivilegeStaticResponse" pkg="types.response" comment="月卡特权" hash="D38ECD8F5DCDBB90DAC341DB7E12FC57">
+			<var name="list" type="VipCardPrivilegeStatic[]" comment="月卡特权"/>
+		</type>
+		
+		<type name="AchvItemDefStaticResponse" pkg="types.response" comment="成就条目" hash="22F00741655AE8B43C55D6CA1F00F781">
+			<var name="list" type="AchvItemDefStatic[]" comment="成就条目"/>
+		</type>
+		
+		<type name="AchvLevelConfStaticResponse" pkg="types.response" comment="成就等级" hash="799292143D6FCDFC1051151046C9B44C">
+			<var name="list" type="AchvLevelConfStatic[]" comment="成就等级"/>
+		</type>
+		
+		<type name="DailyMissionStaticResponse" pkg="types.response" comment="每日任务" hash="BA9F908FF23288C7699ACAEBA183A2EF">
+			<var name="list" type="DailyMissionStatic[]" comment="每日任务"/>
+		</type>
+		
+		<type name="FriendGiftStaticResponse" pkg="types.response" comment="好友礼物" hash="D2B0B7C01FB240DBBC59629C01846CF3">
+			<var name="list" type="FriendGiftStatic[]" comment="好友礼物"/>
+		</type>
+		
+		<type name="ChargePrivilegeStaticResponse" pkg="types.response" comment="VIP等级特权" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="ChargePrivilegeStatic[]" comment="好友礼物"/>
+		</type>
+		
+		<type name="ArenaPayConfStaticResponse" pkg="types.response" comment="竞技场付费配置" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="ArenaPayConfStatic[]" comment="竞技场付费配置"/>
+		</type>
+		
+		<type name="ArenaPrizeConfStaticResponse" pkg="types.response" comment="竞技场奖励配置" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="ArenaPrizeConfStatic[]" comment="竞技场奖励配置"/>
+		</type>
+		
+		<type name="ArenaShopItemConfStaticResponse" pkg="types.response" comment="竞技场商品配置" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="ArenaShopItemConfStatic[]" comment="竞技场商品配置"/>
+		</type>
+		
+		<type name="FashionShopStaticResponse" pkg="types.response" comment="时装商城商品" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="FashionShopStatic[]" comment="时装商城商品"/>
+		</type>
+		
+		<type name="FashionSuitStaticResponse" pkg="types.response" comment="时装商城套装" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="FashionSuitStatic[]" comment="时装商城套装"/>
+		</type>
+		
+		<type name="EggShopStaticResponse" pkg="types.response" comment="蛋商品" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="EggShopStatic[]" comment="蛋商品"/>
+		</type>
+		
+		<type name="PollEggStaticResponse" pkg="types.response" comment="扭蛋" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="PollEggStatic[]" comment="蛋商品"/>
+		</type>
+		
+		<type name="GetCoinPayStaticResponse" pkg="types.response" comment="招财付费" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="GetCoinPayStatic[]" comment="招财付费"/>
+		</type>
+		
+		<type name="VitalityRechargeCostStaticResponse" pkg="types.response" comment="钻石购买体力耗费" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="VitalityRechargeCostStatic[]" comment="钻石购买体力耗费"/>
+		</type>
+		
+		<type name="SignupDefStaticResponse" pkg="types.response" comment="每日签到" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="SignupDefStatic[]" comment="签到"/>
+		</type>
+		
+		<type name="DailyFightStaticResponse" pkg="types.response" comment="每日副本" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="DailyFightStatic[]" comment="每日副本"/>
+		</type>
+		
+		<type name="DailyFightTypeStaticResponse" pkg="types.response" comment="每日副本类型" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="DailyFightTypeStatic[]" comment="每日副本类型"/>
+		</type>
+		
+		<type name="LevelUpRacePrizeStaticResponse" pkg="types.response" comment="冲级奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="LevelUpRacePrizeStatic[]" comment="冲级奖励"/>
+		</type>
+		
+		<type name="FirstRechargePrizeStaticResponse" pkg="types.response" comment="首充奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="FirstRechargePrizeStatic[]" comment="首充奖励"/>
+		</type>
+		
+		<type name="MonthRechargePrizeStaticResponse" pkg="types.response" comment="月累计充值奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="MonthRechargePrizeStatic[]" comment="月累计充值奖励"/>
+		</type>
+		
+		<type name="YearRechargePrizeStaticResponse" pkg="types.response" comment="年卡奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="YearRechargePrizeStatic[]" comment="年卡奖励"/>
+		</type>
+		
+		<type name="MissionStaticResponse" pkg="types.response" comment="任务" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="MissionStatic[]" comment="任务"/>
+		</type>
+		
+		<type name="LearningMissionPrizeStaticResponse" pkg="types.response" comment="学习任务奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="LearningMissionPrizeStatic[]" comment="学习任务奖励"/>
+		</type>
+		
+		<type name="GameMapStaticResponse" pkg="types.response" comment="地图" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="GameMapStatic[]" comment="地图"/>
+		</type>
+		
+		<type name="RoleNameStaticResponse" pkg="types.response" comment="新角色推荐姓名。只有一条记录" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="RoleNameStatic[]" comment="新角色推荐姓名"/>
+		</type>
+		
+		<type name="PeriodSignupStaticResponse" pkg="types.response" comment="签到活动奖励。只有一条记录" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="PeriodSignupStatic[]" comment="签到活动奖励"/>
+		</type>
+		
+		<type name="PeriodRechargePrizeStaticResponse" pkg="types.response" comment="累计充值活动奖励。只有一条记录" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="PeriodRechargePrizeStatic[]" comment="累计充值活动奖励"/>
+		</type>
+		
+		<type name="PeriodRechargeRefundStaticResponse" pkg="types.response" comment="充值返利奖励。只有一条记录" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="PeriodRechargeRefundStatic[]" comment="充值返利奖励"/>
+		</type>
+		
+		<type name="PeriodPollEggPrizeStaticResponse" pkg="types.response" comment="累计钻石扭蛋活动奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="PeriodPollEggPrizeStatic[]" comment="累计钻石扭蛋活动奖励"/>
+		</type>
+		
+		
+		<type name="WeeklyLearnPrizeStaticResponse" pkg="types.response" comment="每周学习奖励" hash="7F935DB2CB9B41E1A0AC026CC343ADE1">
+			<var name="list" type="WeeklyLearnPrizeStatic[]" comment="每周学习奖励"/>
+		</type>
+		
+		<type name="SpgPetDefStatic" pkg="types" comment="宠物定义" hash="65BB714D216659B3E7699C96401FB533">
+			<var name="petId" type="String" comment="宠物id"/>
+			<var name="petName" type="String" comment="宠物名"/>
+			<var name="desc" type="String" comment="描述"/>
+			<var name="star" type="int" comment="星级"/>
+			<var name="element" type="String" comment="WATER,FIRE,WOOD,LIGHT,DARK,"/>
+			<var name="race" type="String" comment="HUMAN,BEAST,DRAGON,ELF,MACHINE,"/>
+			<var name="petType" type="String" comment="BATTLE,EXP,COIN,PROP"/>
+			<var name="propUp" type="String" comment="HP_UP,ATT_UP,DEF_UP"/>
+			<var name="evfPid" type="String" comment="由哪个宠物进化而来。可能为null"/>
+			<var name="luck" type="int" comment="基础幸运"/>
+			<var name="lkLmt" type="int" comment="幸运上限"/>
+			<var name="speed" type="int" comment="移动速度"/>
+			<var name="skillList" type="String[]" comment="技能id列表"/>
+			<var name="uniqueSkill" type="String" comment="必杀技id"/>
+			<var name="eflst" type="String" comment="进化路线id列表"/>
+			<var name="lvlCf" type="int/SpgPetLevelConfStatic" comment="每个级别的属性值 key:等级"/>
+			<var name="entryNum" type="int" comment="入场顺序"/>
+			<var name="logo" type="String" comment="头像"/>
+			<var name="cardPic" type="String" comment="卡牌图"/>
+			<var name="animateResource" type="String" comment="动画资源"/>
+			<var name="uniqueSkillSound" type="String" comment="必杀音效"/>
+			<var name="genSource" type="String[]" comment="产出来源"/>
+		</type>
+		
+		<type name="SpgPetLevelConfStatic" pkg="types" comment="宠物等级数值" hash="12E9CCE0EF58B68AC01652EAAD52EECA">
+			<var name="attack" type="int" comment="基础攻击"/>
+			<var name="defense" type="int" comment="基础防御"/>
+			<var name="hp" type="int" comment="基础hp"/>
+			<var name="critLvl" type="int" comment="暴击等级"/>
+			<var name="agLvl" type="int" comment="闪避等级"/>
+			<var name="propUpLimitMap" type="String/int" comment="属性加成上限 key:HP_UP,ATT_UP,DEF_UP"/>
+		</type>
+		
+		<type name="SpgPetSkillStatic" pkg="types" comment="技能定义" hash="A0D199D124E2AF3D958A70369FF7210A">
+			<var name="skId" type="String" comment="技能id"/>
+			<var name="skName" type="String" comment="技能名"/>
+			<var name="global" type="boolean" comment="指定该技能是否是被动加属性技能。是的话制导方式、施法效果、触发时长、动画时长、CD时长都无效"/>
+			<var name="desc" type="String" comment="技能描述"/>
+			<var name="descArgument" type="int/String[]" comment="所有等级的技能描述参数"/>
+			<var name="openLevel" type="int" comment="开启等级"/>
+			<var name="levelLimitDiff" type="int" comment="技能与宠物等级的最小差值.例:此字段为10，则代表角色30级时，此技能最高升到20级就不能再升了"/>
+			<var name="targetFinderDescMap" type="int/SpgEffectValueStatic" comment="所有等级的制导方式"/>
+			<var name="loadTime" type="int" comment="触发时长"/>
+			<var name="animateTime" type="int" comment="动画时长"/>
+			<var name="cdTime" type="int" comment="CD时间"/>
+			<var name="initCdTime" type="int" comment="初始CD时间"/>
+			<var name="effDescMap" type="int/SpgEffectValueStatic[]" comment="所有等级的技能效果列表 key:等级"/>
+			<var name="castEffDescMap" type="int/SpgEffectValueStatic" comment="所有等级的施法效果"/>
+		</type>
+		
+		<type name="SpgEffectValueStatic" pkg="types" comment="技能效果描述" hash="7D0BEE899E7CC63D767485AABB858B24">
+			<var name="effName" type="String" comment="效果名"/>
+			<var name="attribute" type="String/String" comment="???问王羽"/>
+		</type>
+		
+		<type name="SpgEggStatic" pkg="types" comment="宠物蛋定义" hash="8DF997A815E4DF393D03538C90BEE1B0">
+			<var name="eggId" type="String" comment="蛋id"/>
+			<var name="eggName" type="String" comment="蛋名字"/>
+			<var name="star" type="int" comment="效果名"/>
+			<var name="element" type="String" comment="WATER,FIRE,WOOD,LIGHT,DARK,"/>
+			<var name="tgtPetId" type="String" comment="孵化成功后成为哪种宠物"/>
+			<var name="price" type="int" comment="卖出价格"/>
+			<var name="resource" type="String" comment="资源路径"/>
+			<var name="genSource" type="String[]" comment="产出来源"/>
+		</type>
+		
+		<type name="SpgPlayChapterStatic" pkg="types" comment="剧情副本" hash="A915CD68673958EB36110E9BFC02BCDA">
+			<var name="id" type="String"/>
+			<var name="chapNo" type="String" comment="大标题 比如 '第一章'"/>
+			<var name="title" type="String" comment="小标题 比如 '一切开始'"/>
+			<var name="prvIspId" type="String" comment="前一个副本"/>
+			<var name="oplvl" type="int" comment="开启等级"/>
+			<var name="stAni" type="String" comment="初开副本动画"/>
+			<var name="nmLst" type="String[]" comment="普通关卡列表"/>
+			<var name="fsAni" type="String" comment="完成副本动画"/>
+			<var name="ngId" type="String" comment="普通礼包"/>
+		</type>
+		
+		<type name="SpgFightDefStatic" pkg="types" comment="副本关卡" hash="CD2BD04B59A4905FCC2099A4C8EFB4DE">
+			<var name="id" type="String"/>
+			<var name="name" type="String"/>
+			<var name="desc" type="String" comment="关卡描述"/>
+			<var name="ispId" type="String" comment="所属副本id"/>
+			<var name="openFightList" type="String[]" comment="完成哪些关卡，就可以开启本关卡"/>
+			<var name="icon" type="String" comment="完成副本动画"/>
+			<var name="scene" type="String" comment="场景id？"/>
+			<var name="vtCost" type="int" comment="所需体力"/>
+			<var name="etLmt" type="int" comment="单日进入上限"/>
+			<var name="opLvl" type="int" comment="开启等级要求"/>
+			<var name="enmLst" type="String[]" comment="敌人列表"/>
+			<var name="rexp" type="int" comment="角色经验"/>
+			<var name="pexp" type="int" comment="宠物经验"/>
+			<var name="rewardList" type="SpgDropRewardStatic[]" comment="可能掉落奖励列表"/>
+			<var name="firstAni" type="String" comment="初次进入时的立绘"/>
+			<var name="overAni" type="String" comment="初次打过此关的立绘？？"/>
+			<var name="nrw" type="int" comment="不掉落物品的权重"/>
+			<var name="tpq" type="int" comment="平均答题时长 毫秒"/>
+			<var name="cr" type="double" comment="正确率"/>
+		</type>
+		
+		<type name="SpgEnemyDefStatic" pkg="types" comment="关卡敌人，和PetBattleInfo的字段名保持一致" hash="171E201753B87014B299A39112E06745">
+			<var name="id" type="String"/>
+			<var name="name" type="String"/>
+			<var name="pid" type="String" comment="宠物定义，从中取本数据结构中未指定的属性"/> 
+			<var name="hp" type="int" comment="生命"/>
+			<var name="att" type="int" comment="攻"/>
+			<var name="def" type="int" comment="防"/>
+			<var name="crit" type="double" comment="暴击等级"/>
+			<var name="agl" type="double" comment="闪避等级"/>
+			<var name="skId" type="String[]" comment="技能列表"/>
+			<var name="skLvl" type="int[]" comment="技能等级"/>
+			<var name="uskillId" type="String" comment="必杀技能id"/>
+			<var name="uskillLevel" type="int" comment="必杀等级"/>
+			<var name="level" type="int" comment="等级"/>
+			<var name="luck" type="int" comment="幸运"/>
+		</type>
+		
+		<type name="ItemStatic" pkg="types" comment="道具信息" hash="6AE99D55E572D9BC372F6A3D81754043">
+			<var name="itemId" type="String" comment="道具id"/>
+			<var name="itemName" type="String" comment="道具名"/>
+			<var name="desc" type="String" comment="描述"/>
+			<var name="itemType" type="String" comment="类别。BROADCAST：广播类， VITALITY_UP：体力补充类，SPENDABLE：消耗类，EVOLVE_MATERIAL：进化材料"/>
+			<var name="buyPrice" type="int" comment="买入价"/>
+			<var name="sellPrice" type="int" comment="卖出价"/>
+			<var name="vitalityUp" type="int" comment="增加体力值。只有VITALITY_UP类物品此字段&gt;0，其余物品均为0"/>
+			<var name="pic" type="String" comment="资源路径"/>
+		</type>
+		
+		<type name="SpgDropRewardStatic" pkg="types" comment="掉落物品" hash="953F173A9E6D122A87620A7E071A26E4">
+			<var name="rewardType" type="String" comment="奖品类型 PET,EGG,ITEM"/>
+			<var name="rewardId" type="String" comment="奖励物品id 可能是宠物id、蛋id等一切可能奖励的"/>
+			<var name="count" type="int" comment="数量"/>
+			<var name="level" type="int" comment="rewardType为PET时，代表获得宠物的初始等级"/>
+			<var name="weight" type="int" comment="掉落权重"/>
+		</type>
+		
+		<type name="SignupPrizeDefStatic" pkg="types" comment="每日签到奖励" hash="953F173A9E6D122A87620A7E071A26E4">
+			<var name="dayOfMonth" type="int" comment="每个月的第几号。当此类作为累计签到奖励时，此字段表示累计天数"/>
+			<var name="prizeDetailDefList" type="SignupPrizeDetailDef[]" comment="奖励具体信息"/>
+			<var name="vipDouble" type="boolean" comment="vip是否双倍"/>
+		</type>
+		
+		<type name="SignupPrizeDetailDef" pkg="types" comment="每日签到奖励具体信息" hash="953F173A9E6D122A87620A7E071A26E4">
+			<var name="rewardType" type="String" comment="奖品类型 PET,ITEM,DIAMOND"/>
+			<var name="rewardId" type="String" comment="奖励物品id 可能是宠物id、蛋id等一切可能奖励的"/>
+			<var name="count" type="int" comment="数量"/>
+		</type>
+		
+		<type name="SpgEvolveFormulaStatic" pkg="types" comment="进化路线" hash="2B931423AFFB43B9F70074347FDD04FA">
+			<var name="formulaId" type="String" comment="进化id"/>
+			<var name="srcPetId" type="String" comment="进化主宠"/>
+			<var name="mtPetMap" type="String/int" comment="进化材料 key:宠物id vlaue:数量"/>
+			<var name="itemMap" type="String/int" comment="进化材料 key:道具id vlaue:数量"/>
+			<var name="tgtPetId" type="String" comment="进化完成后宠物"/>
+		</type>
+	
+		<type name="LevelExpStatic" pkg="types" comment="等级经验" hash="A94F55853ECB2D9D8561115083CB8D74">
+			<var name="level" type="int" comment="等级"/>
+			<var name="roleAccExp" type="long" comment="当前等级角色累积经验"/>
+			<var name="roleNextDelta" type="long" comment="当前等级角色升到下一级所需经验"/>
+			<var name="petAccExp" type="long" comment="当前等级宠物累积经验"/>
+			<var name="petNextDelta" type="long" comment="当前等级宠物升到下一级所需经验"/>
+		</type>
+		
+		<type name="RechargeProductStatic" pkg="types" comment="充值商品" hash="D148654D1300E88F7F243063B53BD337">
+			<var name="productId" type="int" comment="商品id"/>
+			<var name="productName" type="long" comment="商品名"/>
+			<var name="price" type="long" comment="买多少rmb"/>
+			<var name="vipDayCount" type="long" comment="给多少天vip"/>
+			<var name="diamond" type="long" comment="给多少钻石"/>
+			<var name="coin" type="long" comment="给多少金币"/>
+			<var name="visible" type="boolean" comment="是否用户可见"/>
+			<var name="isVipProduct" type="boolean" comment="是否17zuoyevip商品"/>
+			<var name="icon" type="String" comment="图标"/>
+		</type>
+		
+		<type name="SkillUpgradeCostStatic" pkg="types" comment="充值消耗" hash="977C96659383689BE4CAEFECA5D6CF4C">
+			<var name="openLevel" type="int" comment="技能开启等级"/>
+			<var name="costMap" type="int/int" comment="key:技能当前等级,value:升到下一级所需金币"/>
+		</type>
+		
+		<type name="ChargePrivilegeStatic" pkg="types" comment="充值特权(游戏内的VIP特权)" hash="6A7C0C8E07CFD5665F7F8DFA6E73211B">
+			<var name="vipLevel" type="int" comment="vip等级"/>
+			<var name="chargeAmount" type="int" comment="达到当前vip等级所需累计充值的钻石数"/>
+			<var name="vitalTime" type="int" comment="可购买体力次数"/>
+			<var name="diamondToGoldTime" type="int" comment="可招财次数"/>
+			<var name="arenaTime" type="int" comment="可重置竞技场挑战的次数"/>
+			<var name="hatchQuestionTime" type="int" comment="可加速孵化的次数"/>
+			<var name="bossTime" type="int" comment="BOSS战上限"/>
+			<var name="vipHatcherOpen" type="boolean" comment="是否开启vip孵化器"/>
+			<var name="diamontCrit" type="int" comment="招财暴击提升率(这个字段仅用于给用户看，不涉及到业务运算)"/>
+			<var name="critRatePool" type="int/int" comment="暴击概率池。这个字段用于计算暴击，仅用于后端"/>
+		</type>
+		
+		<type name="VipCardPrivilegeStatic" pkg="types" comment="充值消耗" hash="6284669C1CB3590035AC455EDC4A3596">
+			<var name="id" type="int" comment="没啥用。这个数据结构只有一条数据"/>
+			<var name="freeGetCoin" type="int" comment="免费招财次数"/>
+			<var name="vitalTime" type="int" comment="购买体力次数上限"/>
+			<var name="dailyDiamond" type="int" comment="每日钻石奖励"/>
+			<var name="fashionDiscount" type="double" comment="时装折扣"/>
+			<var name="hatchTimeDiscount" type="double" comment="孵化时间折扣"/>
+		</type>
+		
+		<type name="AchvItemDefStatic" pkg="types" comment="成就条目" hash="B175417AD5715628A5EF5836DF24000E">
+			<var name="id" type="String" comment="id"/>
+			<var name="name" type="String" comment="成就名"/>
+			<var name="desc" type="String" comment="描述"/>
+			<var name="cid" type="String" comment="成就类别"/>
+			<var name="titleId" type="String" comment="达成成就后获得的称号。可能为空"/>
+			<var name="badgeId" type="String" comment="达成成就后获得的徽章。可能为空"/>
+			<var name="pointGet" type="int" comment="达成成就后获得的成就点数，可能为0"/>
+			<var name="progressMax" type="int" comment="进度条长度"/>
+			<var name="nextId" type="String" comment="同系列成就的下一个成就"/>
+		</type>
+		
+		<type name="AchvLevelConfStatic" pkg="types" comment="成就等级" hash="FCB98886622EBBE73CE9ACC87CC38AA1">
+			<var name="level" type="int" comment="成就等级"/>
+			<var name="reward" type="AchvReward[]" comment="到达当前成就时获得的奖励"/>
+			<var name="bid" type="String" comment="徽章id"/>
+			<var name="accExp" type="int" comment="达到当前等级的累积经验"/>
+			<var name="nextLevelDeltaExp" type="int" comment="升到下一等级所需要的经验"/>
+		</type>
+		
+		<type name="AchvReward" pkg="types" comment="成就奖励" hash="E93767EF9E4759854812C4DC97738EDB">
+			<var name="rewardType" type="String" comment="奖励类别。取值：PET,EGG,ITEM,COIN,DIAMOND,FASHION"/>
+			<var name="rewardId" type="String" comment="奖励物品id 可能是宠物id、蛋id等一切可能奖励的"/>
+			<var name="count" type="int" comment="数量"/>
+		</type>
+		
+		<type name="FriendGiftStatic" pkg="types" comment="好友礼物" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="id" type="String" comment="id"/>
+			<var name="name" type="String" comment="礼物名字"/>
+			<var name="desc" type="String" comment="描述"/>
+			<var name="coinCost" type="int" comment="金币消耗"/>
+			<var name="diamondCost" type="int" comment="钻石消耗"/>
+			<var name="vup" type="int" comment="增加体力数"/>
+			<var name="pic" type="String" comment="美术资源路径?"/>
+			<var name="friendPointUp" type="int" comment="增加友情点数"/>
+		</type>
+		
+		<type name="ArenaPayConfStatic" pkg="types" comment="竞技场付费" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="start" type="int" comment="次数下限"/>
+			<var name="end" type="int" comment="次数上限"/>
+			<var name="diamond" type="int" comment="钻石消耗"/>
+			<var name="coupon" type="int" comment="挑战券消耗"/>
+		</type>
+		
+		<type name="ArenaPrizeConfStatic" pkg="types" comment="竞技场奖励" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="start" type="int" comment="名次下限"/>
+			<var name="end" type="int" comment="名次上限"/>
+			<var name="coin" type="int" comment="金币奖励"/>
+			<var name="honor" type="int" comment="荣誉奖励"/>
+			<var name="diamond" type="int" comment="钻石奖励"/>
+		</type>
+		
+		<type name="ArenaShopItemConfStatic" pkg="types" comment="竞技场商品配置" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="level" type="int" comment="等级"/>
+			<var name="shopItemList" type="SimpleShopItemStatic" comment="商品"/>
+		</type>
+		
+		<type name="SimpleShopItemStatic" pkg="types" comment="竞技场商品配置" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="itemType" type="String" comment="商品类型"/>
+			<var name="itemId" type="String" comment="商品id"/>
+			<var name="count" type="int" comment="数量"/>
+			<var name="weight" type="int" comment="权重"/>
+			<var name="priceType" type="String" comment="用何种货币交易"/>
+			<var name="price" type="int" comment="售价"/>
+		</type>
+		
+		<type name="FashionShopStatic" pkg="types" comment="竞技场商品配置" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="id" type="String" comment="时装id"/>
+			<var name="name" type="String" comment="时装名"/>
+			<var name="desc" type="String" comment="说明文字"/>
+			<var name="price" type="int" comment="售价"/>
+			<var name="cornerTag" type="String" comment="角标可取值: HOT,NEW,DISCOUNT 表示 热卖，新品，打折"/>
+			<var name="position" type="String" comment="表示时装穿戴位置。穿戴位置相同的时装不可以同时穿在身上"/>
+			<var name="suitId" type="String" comment="所属套装id"/>
+			<var name="selling" type="boolean" comment="是否在售。false时，该商品不可在商城显示"/>
+			<var name="showResource" type="String" comment="角色展示资源"/>
+			<var name="qResource" type="String" comment="Q版资源"/>
+		</type>
+		
+		<type name="FashionSuitStatic" pkg="types" comment="时装商城套装" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="id" type="String" comment="套装id"/>
+			<var name="name" type="String" comment="套装名"/>
+			<var name="fashionList" type="String[]" comment="套装包含的时装id列表"/>
+			<var name="selling" type="boolean" comment="是否在售。false时，该商品不可在商城显示"/>
+			<var name="cornerTag" type="String" comment="角标可取值: HOT,NEW,DISCOUNT 表示 热卖，新品，打折"/>
+		</type>
+		
+		<type name="EggShopStatic" pkg="types" comment="时装商城套装" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="eggId" type="String" comment="蛋id"/>
+			<var name="name" type="String" comment="商品名"/>
+			<var name="desc" type="String" comment="描述"/>
+			<var name="price" type="int" comment="售价"/>
+			<var name="cornerTag" type="String" comment="角标可取值: HOT,NEW,DISCOUNT 表示 热卖，新品，打折"/>
+			<var name="selling" type="boolean" comment="是否在售"/>
+			<var name="resource" type="String" comment="资源"/>
+		</type>
+		
+		<type name="DailyMissionStatic" pkg="types" comment="每日任务" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="id" type="String" comment="套装id"/>
+			<var name="name" type="String" comment="任务名"/>
+			<var name="progressLength" type="int" comment="进度条长度"/>
+			<var name="openLevel" type="int" comment="开启等级。前端应该用不到"/>
+			<var name="pic" type="String" comment="美术资源路径"/>
+			<var name="exp" type="int" comment="奖励经验"/>
+			<var name="coin" type="int" comment="奖励金币"/>
+			<var name="pet" type="String" comment="奖励宠物"/>
+			<var name="receiveScript" type="String" comment="接到任务时触发的脚本"/>
+			<var name="clickScript" type="String" comment="点击任务条时触发的脚本"/>
+		</type>
+		
+		<type name="PollEggStatic" pkg="types" comment="扭蛋" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="id" type="String" comment="这个类型就一条记录。id就写1好了"/>
+			<var name="diamondFirstPoll" type="SpgDropRewardStatic[]" comment="首抽3星宠物"/>
+			<var name="diamondExpPet" type="String" comment="钻石扭蛋必得三星经验宠物id"/>
+			<var name="coinExpPet" type="String" comment="金币蛋必得三星经验宠物id"/>
+			<var name="diamondPaidPoll" type="SpgDropRewardStatic[]" comment="钻石vip奖池"/>
+			<var name="diamondUnpaidPoll" type="SpgDropRewardStatic[]" comment="钻石屌丝奖池"/>
+			<var name="coinPoll" type="SpgDropRewardStatic[]" comment="金币奖池"/>
+		</type>
+		
+		<type name="GetCoinPayStatic" pkg="types" comment="招财付费" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="start" type="int" comment="次数下限"/>
+			<var name="end" type="int" comment="次数上限"/>
+			<var name="diamond" type="int" comment="钻石消耗"/>
+			<var name="catCoin" type="int" comment="猫币消耗"/>
+		</type>
+		
+		<type name="VitalityRechargeCostStatic" pkg="types" comment="钻石购买体力耗费" hash="D3C287FE1B58F5D37481C82A23019E7F">
+			<var name="start" type="int" comment="次数下限"/>
+			<var name="end" type="int" comment="次数上限"/>
+			<var name="diamond" type="int" comment="钻石消耗"/>
+		</type>
+		
+		<type name="SignupDefStatic" pkg="types" comment="签到配置">
+			<var name="id" type="String" comment="id，格式 yyyyMM，例如201508"/>
+			<var name="dailyPrizeList" type="SignupPrizeDefStatic[]" comment="每日奖励"/>
+			<var name="accPrizeList" type="SignupPrizeDefStatic[]" comment="累计奖励"/>
+		</type>
+		
+		<type name="DailyFightTypeStatic" pkg="types" comment="每日副本种类">
+			<var name="id" type="String" comment="id"/>
+			<var name="name" type="String" comment="名字"/>
+			<var name="desc" type="String" comment="文字介绍"/>
+			<var name="openDayOfWeek" type="int[]" comment="开启日"/>
+			<var name="limitOfEntry" type="int" comment="每日进入次数上限"/>
+		</type>
+		
+		<type name="DailyFightStatic" pkg="types" comment="每日副本战斗">
+			<var name="id" type="String" comment="id"/>
+			<var name="categoryId" type="String" comment="DailyFightTypeStatic的id"/>
+			<var name="star" type="int" comment="难度星级"/>
+			<var name="scene" type="String" comment="场景id"/>
+			<var name="openLevel" type="int" comment="开启等级"/>
+			<var name="vitalityCost" type="int" comment="体力消耗"/>
+			<var name="timePerQuestion" type="int" comment="每道题耗时（毫秒）"/>
+			<var name="correctRate" type="double" comment="正确率"/>
+			<var name="enemyList" type="String[]" comment="关卡敌人"/>
+			<var name="rewardList" type="SpgDropRewardStatic[]" comment="可能掉落的物品列表"/>
+		</type>
+		
+		<type name="LevelUpRacePrizeStatic" pkg="types" comment="冲级奖励">
+			<var name="level" type="int" comment="等级"/>
+			<var name="eggPrize" type="String/int" comment="蛋奖励"/>
+			<var name="petPrize" type="String/int" comment="宠物奖励"/>
+			<var name="itemPrize" type="String/int" comment="道具奖励"/>
+			<var name="diamond" type="int" comment="钻石奖励"/>
+		</type>
+		
+		<type name="FirstRechargePrizeStatic" pkg="types" comment="首充奖励">
+			<var name="id" type="int" comment="id"/>
+			<var name="pet" type="String/int" comment="宠物奖励"/>
+			<var name="coin" type="int" comment="金币"/>
+			<var name="item" type="String/int" comment="道具奖励"/>
+			<var name="egg" type="String/int" comment="蛋奖励"/>
+			<var name="fashionMale" type="String[]" comment="男时装"/>
+			<var name="fashionFemale" type="String[]" comment="女时装"/>
+		</type>
+		
+		<type name="MonthRechargePrizeStatic" pkg="types" comment="当月累计充值奖励">
+			<var name="id" type="String" comment="id"/>
+			<var name="rechargeAmount" type="int" comment="累计充值额"/>
+			<var name="pet" type="String/int" comment="宠物奖励"/>
+			<var name="diamond" type="int" comment="金币"/>
+			<var name="coin" type="int" comment="金币"/>
+			<var name="item" type="String/int" comment="道具奖励"/>
+			<var name="egg" type="String/int" comment="蛋奖励"/>
+		</type>
+		
+		<type name="YearRechargePrizeStatic" pkg="types" comment="年卡奖励">
+			<var name="id" type="int" comment="id"/>
+			<var name="fashionMale" type="String[]" comment="男性时装列表"/>
+			<var name="fashionFemale" type="String[]" comment="女性时装列表"/>
+			<var name="pet" type="String/int" comment="宠物奖励"/>
+			<var name="coin" type="int" comment="金币"/>
+			<var name="item" type="String/int" comment="道具奖励"/>
+			<var name="egg" type="String/int" comment="蛋奖励"/>
+		</type>
+		
+		<type name="MissionStatic" pkg="types" comment="任务定义">
+			<var name="id" type="String" comment="id"/>
+			<var name="source" type="String" comment="TRUNK/BRANCK/INTRO 表示主线/支线/引导"/>
+			<var name="name" type="String" comment="任务名字"/>
+			<var name="desc" type="String" comment="描述"/>
+			<var name="targetDesc" type="String" comment="任务目标"/>
+			<var name="missionType" type="String" comment="类型"/>
+			<var name="targetId" type="String" comment="目标npcid，关卡id，道具id"/>
+			<var name="counter" type="int" comment="金币"/>
+			<var name="openMission" type="String[]" comment="可能开启的后续任务列表"/>
+			<var name="preMission" type="String[]" comment="前序任务列表"/>
+			<var name="rewardList" type="SpgDropRewardStatic[]" comment="奖励"/>
+			<var name="scriptId" type="String" comment="对话脚本id"/>
+			<var name="itemId" type="String" comment="如果是道具收集任务，此处为道具id"/>
+			<var name="clickScriptId" type="String" comment="点击任务条时触发的脚本"/>
+		</type>
+		
+		
+		
+		<type name="ScriptStaticResponse" pkg="types.response" comment="脚本定义响应">
+			<var name="list" type="ScriptStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="ScriptStatic" pkg="types" comment="对话/脚本定义">
+			<var name="id" type="String" comment="id"/>
+			<var name="npc" type="String" comment="npc头像"/>
+			<var name="text" type="String" comment="显示的文本。如果不指定视为脚本"/>
+			<var name="actions" type="String" comment="执行的动作"/>
+			<var name="options" type="OptionStatic[]" comment="选项列表。脚本不具有选项"/>
+		</type>
+		
+		<type name="OptionStatic" pkg="types" comment="选项定义">
+			<var name="icon" type="String" comment="icon和功能定义"/>
+			<var name="text" type="String" comment="显示的文本"/>
+			<var name="actions" type="String" comment="执行的动作"/>
+		</type>
+		
+		<type name="NPCStaticResponse" pkg="types.response" comment="NPC定义响应">
+			<var name="list" type="NPCStatic[]" comment="结果列表"/>
+		</type>
+		
+		<type name="NPCStatic" pkg="types" comment="NPC定义">
+			<var name="id" type="String" comment="id"/>
+			<var name="name" type="String" comment="名字"/>
+			<var name="view" type="String" comment="外观"/>
+			<var name="script" type="String" comment="点击后执行的对话/脚本"/>
+			<var name="tag" type="String" comment="头顶的标记"/>
+			<var name="map" type="String" comment="地图"/>
+			<var name="x" type="double" comment="x坐标，范围0-1"/>
+			<var name="y" type="double" comment="y坐标，范围0-1"/>
+			<var name="icon" type="String" comment="半身像"/>
+		</type>
+		
+		<type name="LearningMissionPrizeStatic" pkg="types.response" comment="学习任务奖励">
+			<var name="scoreLimit" type="int" comment="分数区间"/>
+			<var name="petExpUp" type="double" comment="宠物经验加成"/>
+			<var name="coinUp" type="double" comment="金币加成"/>
+			<var name="petDefId" type="String" comment="经验宠"/>
+			<var name="petCount" type="int" comment="奖励宠物数量"/>
+			<var name="freeGetCountUp" type="int" comment="每日招财次数增加"/>
+			<var name="dailyMissionEntranceUp" type="int" comment="每日任务进入次数增加"/>
+		</type>
+		
+		<type name="RoleNameStatic" pkg="types.response" comment="学习任务奖励">
+			<var name="firstnameMale" type="String[]" comment="男名"/>
+			<var name="firstnameFemale" type="String[]" comment="女名"/>
+			<var name="middlename" type="String[]" comment="中间名"/>
+			<var name="lastname" type="String[]" comment="姓"/>
+		</type>
+		
+		<type name="GameMapStatic" pkg="types.response" comment="地图">
+			<var name="id" type="String" comment="id"/>
+			<var name="name" type="String" comment="地图名"/>
+			<var name="x" type="double" comment="初始x坐标"/>
+			<var name="y" type="double" comment="初始y坐标"/>
+		</type>
+		
+		<type name="PeriodRechargeRefundStatic" pkg="types.response" comment="充值返利">
+			<var name="actName" type="String" comment="ming"/>
+			<var name="startTime" type="long" comment="开始时间"/>
+			<var name="endTime" type="long" comment="结束时间"/>
+			<var name="rate" type="double" comment="返利率"/>
+		</type>
+		
+		<type name="PeriodRechargePrizeStatic" pkg="types.response" comment="累计充值奖励">
+			<var name="actName" type="String" comment="ming"/>
+			<var name="startTime" type="long" comment="开始时间"/>
+			<var name="endTime" type="long" comment="结束时间"/>
+			<var name="closeTime" type="long" comment="关闭时间"/>
+			<var name="rewardList" type="int/SpgDropRewardStatic[]" comment="充值奖励"/>
+		</type>
+		
+		<type name="PeriodSignupStatic" pkg="types.response" comment="定期开放签到奖励">
+			<var name="actName" type="String" comment="ming"/>
+			<var name="startTime" type="long" comment="开始时间"/>
+			<var name="endTime" type="long" comment="结束时间"/>
+			<var name="closeTime" type="long" comment="关闭时间"/>
+			<var name="dailyPrize" type="String/SpgDropRewardStatic[]" comment="每日签到奖励"/>
+			<var name="dayCountPrize" type="int/SpgDropRewardStatic[]" comment="累计签到奖励"/>
+			<var name="expireSignCost" type="int" comment="补签花费钻石数"/>
+		</type>
+		
+		<type name="PeriodPollEggPrizeStatic" pkg="types.response" comment="累计充值奖励">
+			<var name="actName" type="String" comment="ming"/>
+			<var name="startTime" type="long" comment="开始时间"/>
+			<var name="endTime" type="long" comment="结束时间"/>
+			<var name="closeTime" type="long" comment="关闭时间"/>
+			<var name="rewardList" type="int/SpgDropRewardStatic[]" comment="充值奖励"/>
+		</type>
+		
+		<type name="WeeklyLearnPrizeStatic" pkg="types.response" comment="每周成绩统计奖励">
+			<var name="id" type="String" comment="A,B,C,D,F"/>
+			<var name="scoreLine" type="int" comment="分数线"/>
+			<var name="diamond" type="int" comment="钻石奖励"/>
+			<var name="coin" type="int" comment="金币奖励"/>
+			<var name="petMap" type="String/int" comment="宠物奖励"/>
+			<var name="eggMap" type="String/int" comment="宠物蛋奖励"/>
+			<var name="itemMap" type="String/int" comment="道具奖励"/>
+		</type>
+		
+	</types>
+	
+	<messages>
+		
+		<message name="PetDefStatic" pkg="messages.static" comment="获取宠物信息" responseType="SpgPetDefStaticResponse" serverClass="SpgPetDef" url="chongwu_dingyi" hash="708A1D26D43EFDABBBBEB2990853A714">
+		</message>
+		
+		<message name="NPCStatic" pkg="messages.static" comment="NPC信息" responseType="NPCStaticResponse" serverClass="NpcDef" url="npc">
+		</message>
+		
+		<message name="SkillDefStatic" pkg="messages.static" comment="获取宠物技能信息" responseType="SkillDefStaticResponse" serverClass="SpgPetSkill" url="jineng_dingyi" hash="08C5B6D00FF54B370EB84F1DF34ABCFF">
+		</message>
+		
+		<message name="ChapterDefStatic" pkg="messages.static" comment="副本信息" responseType="ChapterDefStaticResponse" serverClass="SpgPlayChapter" url="fuben" hash="DEE9BE78273117A21855960550D17EEE">
+		</message>
+		
+		<message name="FightDefStatic" pkg="messages.static" comment="关卡信息" responseType="FightDefStaticResponse" serverClass="SpgFightDef" url="fuben_zhandou" hash="9A38107C7B15DF4D852E1154B7705F81">
+		</message>
+		
+		<message name="EnemyDefStatic" pkg="messages.static" comment="敌人信息" responseType="EnemyDefStaticResponse" serverClass="SpgEnemyDef" url="enemy" hash="66FEA2DD630387C3C02F945F10AD4756">
+		</message>
+		
+		<message name="EggDefStatic" pkg="messages.static" comment="宠物蛋信息" responseType="EggDefStaticResponse" serverClass="SpgEgg" url="egg" hash="6575C3FA304D85BFEDEFC876CA440214">
+		</message>
+		
+		<message name="EvolveFormulaStatic" pkg="messages.static" comment="进化路线信息" responseType="EvolveFormulaStaticResponse" serverClass="SpgEvolveFormula" url="jinhua_luxian" hash="A68F4F44A2F6732ADC13DC6B6F4BC774">
+		</message>
+		
+		<message name="ItemStatic" pkg="messages.static" comment="道具信息" responseType="ItemStaticResponse" serverClass="SpgItemDef" url="daoju" hash="ABD7E749893DA9B38D520378140E95BD">
+		</message>
+		
+		<message name="LevelExpStatic" pkg="messages.static" comment="等级经验" responseType="LevelExpStaticResponse" serverClass="SpgExpLevelConf" url="dengji_jingyan" hash="5BFC5AF4EE34E7A15D009623A82F1E33">
+		</message>
+		<message name="RechargeProductStatic" pkg="messages.static" comment="充值产品" responseType="RechargeProductStaticResponse" serverClass="SpgRechargeProduct" url="chongzhi_shangpin" hash="8C2B5F894C4C6E6A9D5EBB65D4F391E4">
+		</message>
+		<message name="SkillUpgradeCost" pkg="messages.static" comment="技能升级消耗" responseType="SkillUpgradeCostStaticResponse" serverClass="SpgSkillUpgradeCostDef" url="jineng_shengji_xiaohao" hash="8BE742E8E13003E66D5712947560EE25">
+		</message>
+		<message name="ChargePrivilegeStatic" pkg="messages.static" comment="充值特权(游戏内的VIP等级特权)" responseType="ChargePrivilegeStaticResponse" serverClass="SpgChargePrivilege" url="vip_chongzhi_tequan" hash="F4941B4D16FB19D344B24303983692B6">
+		</message>
+		
+		<message name="VipCardPrivilegeStatic" pkg="messages.static" comment="月卡特权(之所以叫vipcard。是因为这种卡将在17zuoy 以vip形式销售)" responseType="VipCardPrivilegeStaticResponse" serverClass="SpgVipMemberPrivilege" url="yueka_tequan" hash="8134121D579E9CB78A7726CEE3C73191">
+		</message>
+		
+		<message name="AchvItemDefStatic" pkg="messages.static" comment="成就条目" responseType="AchvItemDefStaticResponse" serverClass="SpgAchvItemDef" url="achv_item_def" hash="4015C1259DA68164C1A6EEF3EB276F8E">
+		</message>
+		
+		<message name="AchvLevelConfStatic" pkg="messages.static" comment="成就等级" responseType="AchvLevelConfStaticResponse" serverClass="SpgAchvLevelConf" url="achv_level_conf" hash="EA25CDAB490557140B0F2DB4FC9E5DCB">
+		</message>
+		
+		<message name="FriendGiftStatic" pkg="messages.static" comment="好友礼物" responseType="FriendGiftStaticResponse" serverClass="SpgFriendGiftDef" url="friend_gift_def" hash="4C37BF5597039575BFD23D42F3D85163">
+		</message>
+		
+		<message name="ArenaPayConfStatic" pkg="messages.static" comment="付费挑战花费配置" responseType="ArenaPayConfStaticResponse" serverClass="SpgArenaPayConf" url="jingjichang_fufei" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="ArenaPrizeConfStatic" pkg="messages.static" comment="竞技场奖励配置" responseType="ArenaPrizeConfStaticResponse" serverClass="SpgArenaPrizeConf" url="jingjichang_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="ArenaShopItemConfStatic" pkg="messages.static" comment="竞技场商品配置" responseType="ArenaShopItemConfStaticResponse" serverClass="SpgArenaShopItemConf" url="jingjichang_shangpin" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="FashionShopStatic" pkg="messages.static" comment="时装商城商品" responseType="FashionShopStaticResponse" serverClass="SpgFashionDef" url="shizhuang" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="FashionSuitStatic" pkg="messages.static" commet="时装套装" responseType="FashionSuitStaticResponse" serverClass="SpgFashionSuitDef" url="shizhuang_taozhuang" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="EggShopStatic" pkg="messages.static" comment="宠物蛋商城商品" responseType="EggShopStaticResponse" serverClass="SpgShopEggDef" url="egg_shangpin" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="DailyMissionStatic" pkg="messages.static" comment="每日任务" responseType="DailyMissionStaticResponse" serverClass="SpgDailyMissionDef" url="meiri_renwu" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="PollEggStatic" pkg="messages.static" comment="扭蛋配置" responseType="PollEggStaticResponse" serverClass="SpgPollEggDef" url="niudan" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="GetCoinPayStatic" pkg="messages.static" comment="付费招财花费配置" responseType="GetCoinPayStaticResponse" serverClass="SpgGetCoinPayConf" url="zhaocai_huafei" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="VitalityRechargeCostStatic" pkg="messages.static" comment="钻石购买体力耗费" responseType="VitalityRechargeCostStaticResponse" serverClass="SpgVitalityRechargeCost" url="goumai_tili" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="SignupDefStatic" pkg="messages.static" comment="每日签到" responseType="SignupDefStaticResponse" serverClass="SpgSignupDef" url="qiandao" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="DailyFightTypeStatic" pkg="messages.static" comment="每日副本类型" responseType="DailyFightTypeStaticResponse" serverClass="SpgDailyFightTypeDef" url="meiri_fuben_zhonglei" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="DailyFightStatic" pkg="messages.static" comment="每日副本战斗" responseType="DailyFightStaticResponse" serverClass="SpgDailyFightDef" url="meiri_fuben" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="LevelUpRacePrizeStatic" pkg="messages.static" comment="冲级奖励" responseType="LevelUpRacePrizeStaticResponse" serverClass="SpgLevelUpRacePrizeDef" url="chongji_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		<message name="FirstRechargePrizeStatic" pkg="messages.static" comment="首充奖励" responseType="FirstRechargePrizeStaticResponse" serverClass="SpgFirstRechargePrizeDef" url="shouchong_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="MonthRechargePrizeStatic" pkg="messages.static" comment="月累计充值奖励" responseType="MonthRechargePrizeStaticResponse" serverClass="SpgMonthRechargePrizeDef" url="yue_leiji_chongzhi_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="YearRechargePrizeStatic" pkg="messages.static" comment="年卡奖励" responseType="YearRechargePrizeStaticResponse" serverClass="SpgYearRechargePrizeDef" url="nianka_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="MissionStatic" pkg="messages.static" comment="任务定义" responseType="MissionStaticResponse" serverClass="SpgMissionDef" url="renwu" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="ScriptStatic" pkg="messages.static" comment="对话定义" responseType="ScriptStaticResponse" serverClass="ScriptDef" url="duihua" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="LearningMissionPrizeStatic" pkg="messages.static" comment="学习任务奖励" responseType="LearningMissionPrizeStaticResponse" serverClass="SpgLearningMissionPrizeDef" url="xuexi_renwu_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="GameMapStatic" pkg="messages.static" comment="地图定义" responseType="GameMapStaticResponse" serverClass="SpgGameMapDef" url="map" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="RoleNameStatic" pkg="messages.static" comment="新建角色时名字推荐" responseType="RoleNameStaticResponse" serverClass="SpgRoleNameDef" url="xingming_tuijian" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="PeriodSignupStatic" pkg="messages.static" comment="签到活动奖励" responseType="PeriodSignupStaticResponse" serverClass="PeriodSignupPrizeConf" url="huodong_qiandao" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="PeriodRechargePrizeStatic" pkg="messages.static" comment="累计充值活动奖励" responseType="PeriodRechargePrizeStaticResponse" serverClass="PeriodRechargeActPrizeConf" url="huodong_chongzhi_leiji" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="PeriodRechargeRefundStatic" pkg="messages.static" comment="充值返利" responseType="PeriodRechargeRefundStaticResponse" serverClass="PeriodRechargeRefundConf" url="huodong_chongzhi_fanli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="WeeklyLearnPrizeStatic" pkg="messages.static" comment="每周成绩统计奖励" responseType="WeeklyLearnPrizeStaticResponse" serverClass="WeeklyLearnPrizeConf" url="meizhou_xuexi_jiangli" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+		
+		<message name="PeriodPollEggPrizeStatic" pkg="messages.static" comment="累计钻石扭蛋活动奖励" responseType="PeriodPollEggPrizeStaticResponse" serverClass="PeriodPollEggPrizeConf" url="huodong_zhaohuan_" hash="948F6C9B6F4E34722DACF9F9A5A4FF03">
+		</message>
+	</messages>
+</config>
